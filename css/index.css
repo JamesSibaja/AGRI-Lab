@@ -891,10 +891,10 @@ body {
 /* 2. Contenedor del Marco (Imagen) */
 .marco-inferior {
   width: 100%;
-  /* Elimina el espacio vertical interno que a veces tienen los divs */
+  height: 50px; /* 1. Define la altura fija del contenedor */
   line-height: 0; 
+  overflow: hidden; /* 2. Corta cualquier parte de la imagen que se salga */
   
-  /* Asegurar que no hay margen superior */
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -902,14 +902,17 @@ body {
 /* Estilos de la imagen del marco */
 .marco-inferior img {
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: 50px; /* 3. Forza a la imagen a tener la misma altura que el marco */
+  object-fit: cover; /* 4. escala la imagen para llenar los 50px sin deformarse y corta lo sobrante */
+  object-position: center; /* Centra el enfoque de la imagen al recortarla */
   
-  /* MUY IMPORTANTE: Corrige espacio en blanco debajo de imágenes */
   display: block; 
   position: relative;
   top: -15px;
   z-index: 99;
 }
+
+
 
 /* Sección de contenido de ejemplo debajo */
 .contenido {
