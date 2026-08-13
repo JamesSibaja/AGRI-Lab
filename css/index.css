@@ -888,3 +888,28 @@ body {
     overflow-x: auto;
   }
 }
+/* 2. Contenedor del Marco (Imagen) */
+.marco-inferior {
+  width: 100%;
+  /* Elimina el espacio vertical interno que a veces tienen los divs */
+  line-height: 0; 
+  
+  /* Asegurar que no hay margen superior */
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Estilos de la imagen del marco */
+.marco-inferior img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  
+  /* MUY IMPORTANTE: Corrige espacio en blanco debajo de imágenes */
+  display: block; 
+}
+
+/* Sección de contenido de ejemplo debajo */
+.contenido {
+  padding: 50px;
+  text-align: center;
+}
