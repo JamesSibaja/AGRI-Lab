@@ -1041,7 +1041,7 @@ body {
 
 /* "AGRI" en verde */
 .agri-green {
-  color: #6da632;
+  color: #669933;
   font-size: 1.1em;
   letter-spacing: -0.5px;
 }
@@ -1056,13 +1056,13 @@ body {
 
 /* "Lab" en naranja */
 .agri-orange {
-  color: #f37023;
+  color: #ff751f;
   font-size: 1.1em;
 }
 
 /* "506" en azul oscuro justo debajo */
 .agri-blue {
-  color: #001a49;
+  color: #00379d;
   font-size: 0.75em;
   font-weight: 900;
   margin-top: 2px;
