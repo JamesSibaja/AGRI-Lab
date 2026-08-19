@@ -48,13 +48,12 @@ html {
 body {
   font-family: var(--font-main);
   color: var(--text-dark);
+  background-color: var(--color-white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-
-  /* Fondo: color de respaldo + imagen + repetición + posición */
-  background: var(--color-white) url('../assets/images/fondo.png') repeat-y top center;
-  background-size: 100% auto;
 }
+
+
 
 .container {
   max-width: var(--max-width);
